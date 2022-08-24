@@ -15,10 +15,8 @@ h1
 
 h2
 {
-    color: rgb(25, 25, 25);
-    background: rgb(213, 194, 165);
+    color: rgb(205, 205, 205);
     border-radius: 10px;
-    width: 40em;
     display: inline-block;
 }
 
