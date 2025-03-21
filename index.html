@@ -1,37 +1,89 @@
 <!DOCTYPE html>
 
-<!-- Mon premier code html, 1/03/2021. Au fait, bonjour -->
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>alucas2.github.io</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <!--Title-->
-        <h1>
-            alucas2.github.io
-        </h1>
-        
-        <div class="centered">
-            <h2>
-                ⬇ LinkedIn & Project repository ⬇
-            </h2>
-            
-            <br>
+<head>
+    <meta charset="utf-8">
+    <title>alucas2.github.io</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <!-- Link buttons -->
-            <a class="button button_linkedin" href=http://www.linkedin.com/in/anthony-lucas-a02948194></a>
-            <a class="button button_github" href="https://github.com/alucas2/"></a>
-       
-            <br><br>
-       
-            <!-- Footer -->
-            <div class="footnote">
-                🔨 Under construction 🐙
-            </div>
+<body>
+    <header>
+        <h1>alucas2::hub</h1>
+        <a href="https://github.com/alucas2"><img src="assets/github-brands.svg" height="24" /></a>
+    </header>
+
+    <main>
+        <div class="welcome-box">
+            <h1>📂</h1>
+            <p>
+                This is a collection of my least uninteresting solo and team-work productions. Each project
+                card links to its respective repository, that may or may not be well documented!
+            </p>
         </div>
-    </body>
+        <div class="card-container">
+            <a href="https://github.com/alucas2/chess-tui" class="card">
+                <img src="assets/chessgame.png" alt="chess game" />
+                <div class="card-text">
+                    <h2> Unnamed chess game </h2>
+                    Fun project ● Lichess bot ● Rust 🦀
+                    <p>
+                        A simple chess engine with a nice terminal interface. Plays moderately strong moves, still
+                        better than I ever could.
+                    </p>
+                </div>
+            </a>
+            <a href="https://github.com/alucas2/raytracing-potato" class="card">
+                <img src="assets/glassbunny.png" alt="ray tracing" />
+                <div class="card-text">
+                    <h2> Ray tracing experiments </h2>
+                    Fun project ● Computer graphics ● Rust 🦀
+                    <p>
+                        Homemade ray tracer inspired by that <em>Ray Tracing in One Weekend</em> series of books.
+                        Definitely took me more that one weekend. Renders cool glass statues.
+                    </p>
+                </div>
+            </a>
+            <a href="https://github.com/alucas2/mafs" class="card">
+                <img src="assets/vector.png" />
+                <div class="card-text">
+                    <h2> Low-dimensional math library </h2>
+                    Useful stuff ● x86 Assembly ● Rust 🦀
+                    <p>
+                        A tiny library that uses SIMD instructions to accelerate 2D and 3D operations in my other
+                        projects. Performance gains not guaranteed - for educational purposes only.
+                    </p>
+                </div>
+            </a>
+            <a href="https://github.com/AlexandreGoRIO/parping_galax" class="card">
+                <img src="assets/galaxie.png" alt="galaxie" />
+                <div class="card-text">
+                    <h2> GPU physics simulation </h2>
+                    Class project ● Parallel computing ● C++ ⚡
+                    <p>
+                        Numerically simulates an N-body system, except N is eighty thousand. Runs on a graphics
+                        processor.
+                    </p>
+                </div>
+            </a>
+            <a href="https://github.com/alucas2/tipe_entrepot" class="card">
+                <img src="assets/multiagent.png" alt="python simulation" />
+                <div class="card-text">
+                    <h2> Multi-agent simulation </h2>
+                    Class project ● Outdated stuff ● Python 🐍
+                    <p>
+                        Solve a cooperative multi-agent pathfinding problem at a busy warehouse, like a true logistics
+                        mastermind.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        Made with love 🧡 2019-2025
+    </footer>
+</body>
+
 </html>

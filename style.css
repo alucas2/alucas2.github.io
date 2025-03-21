@@ -1,66 +1,103 @@
-body
-{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(70, 57, 70);
-    text-align: center;
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url("assets/source_code_pro.ttf");
 }
 
-h1
-{
+body {
     color: white;
-    font-size: 3em;
-    text-shadow: 0px 0px 10px rgb(150, 150, 150);
-    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #262626;
 }
 
-h2
-{
-    color: rgb(205, 205, 205);
-    border-radius: 10px;
-    display: inline-block;
+@media screen and (min-width: 800px) {
+    body {
+        background-image: url("assets/background.png");
+        background-size: cover;
+        background-position: center;
+    }
 }
 
-.centered {
+p {
+    text-align: justify;
+}
+
+a {
+    color: inherit
+}
+
+header,
+footer,
+main {
+    padding: 1em;
+}
+
+header,
+footer {
+    color: #262626;
+    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
+    background-color: #fab23d;
+    box-shadow: 0px 0px 16px 0px black;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: x-large;
+}
+
+footer {
     text-align: center;
 }
 
-.button {
-    border: none;
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin: 0px 7px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    box-shadow: 0px 0px 2px black;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-.button_linkedin {
-    background-color: #0274B3;
-    background-image: url("linkedin.jpg");
-    background-size: 6em;
-    height: 6em;
-    width: 6em;
+.welcome-box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+    margin: auto;
+    max-width: 540px;
 }
 
-.button_github {
-    background-color: black;
-    background-image: url("github.jpg");
-    background-size: 6em;
-    height: 6em;
-    width: 6em;
+.card {
+    border-style: solid;
+    border-color: #ffc812;
+    border-width: 1px;
+    background-color: #262626;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
 }
 
-.button:hover {
-    box-shadow: 0px 0px 20px black;
+a.card:hover h2 {
+    text-decoration-line: underline;
 }
 
-.footnote {
-    color: rgb(205, 205, 205);
-    font-size: 1em;
-    display: inline-block;
+.card img {
+    width: 100%;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    background: linear-gradient(to top,
+            #000000ff 0%,
+            #00000080 75%,
+            #00000000 100%);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 600px));
+    grid-auto-rows: 350px;
+    justify-content: center;
+    gap: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
